@@ -312,6 +312,7 @@ a{
     border: none;
     border-radius: 30px;
     color: white;
+    cursor: pointer;
     
 }
 .bt4 button:hover{
@@ -389,6 +390,7 @@ a{
 
 .bt6{
     width:33%;
+    cursor: pointer;
     
 }
 .sec2{
