@@ -181,46 +181,48 @@ a{
     
 }
 .image .image1{
-    /* justify-content: space-between; */
+    
     background-image: url(img/banner-image.jpg);
-    background-size: 250px 350px;
-    width: 250px;
-    height: 350px;
+   
     background-repeat: no-repeat;
-     /* background-size: 300px 400px;
+     background-size: 300px 400px;
         width: 300px;
-        height: 400px; */
+        height: 400px;
     
     border-radius: 20px;
 }
 
 .price{
-   position: absolute;
-   /* right: 20px; 
-   top: 20px; */
-   left: 85%;
-   top: 85px;
+   /* position: relative;
+   left: 220px;
+   top: 20px;
+    */
+   margin-left: 200px;
+   margin-top: 20px;
+   margin-right: 20px;
    background-color:#0d6efd;
+   padding: 10px 20px;
    border-radius: 20px;
    color: white;
-   font-size: 20px;
-   padding: 10px 20px;
-   /* margin-left: 400px; */
    font-weight: bold;
+   font-size: 20px;
+  
 }
 .offer{
     height: 50px;
     width: 50px;
-    position: absolute;
+    position: relative; 
    
-    left: 63%;
-    top: 400px;
+    /*left: 63%;*/
+    top: 270px;
+    /* left: 50px; */
     background-color: rgb(233, 80, 80);
-    border-radius: 200px;
+    border-radius: 500px;
     color: white;
     font-size: 30px;
     padding: 20px ;
-    /* margin-left: 400px; */
+    right: 20px;
+   
     font-weight: bold;
  }
 .header-end{
@@ -342,6 +344,38 @@ a{
  .im3 #i3{
     border-radius: 25px ;
 }
+.trending-01{
+    background-image: url(img/trending-01.jpg);
+    background-repeat: no-repeat;
+    background-size: 260px 200px;
+    width: 260px;
+    height: 200px;
+    border-radius: 25px;
+}
+.trending-02{
+    background-image: url(img/trending-02.jpg);
+    background-repeat: no-repeat;
+    background-size: 260px 200px;
+    width: 260px;
+    height: 200px;
+    border-radius: 25px;
+}
+.trending-03{
+    background-image: url(img/trending-03.jpg);
+    background-repeat: no-repeat;
+    background-size: 260px 200px;
+    width: 260px;
+    height: 200px;
+    border-radius: 25px;
+}
+.trending-04{
+    background-image: url(img/trending-04.jpg);
+    background-repeat: no-repeat;
+    background-size: 260px 200px;
+    width: 260px;
+    height: 200px;
+    border-radius: 25px;
+}
 
 .text3{
     padding: 0 20px;
@@ -459,12 +493,13 @@ a{
    
     
 }
+
 .s1 h3{
     padding: 0 45%;
    
 }
 .s1 h1{
-    padding: 0 42%;
+    padding: 0 41%;
     
 }
 .s2{
@@ -523,55 +558,40 @@ a{
 .footer #a:hover{
     color: lightgray;
 }
-/* .price1{
+ .price1{
     background-color:#0d6efd;
-    position: absolute;
+    position: relative;
     top:20px;
     left:180px;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     padding: 7px 7px;
     border-radius: 10px;
     color: white;
+    
 
     
-}
-.price1 .exp{
-    font-size: 20px;
-    font-weight: bold;
 }
 .price2{
-    background-color:#0d6efd;
-    position: absolute;
-    top:20px;
-    left:37%;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    
+    width: 40px;
+    height: 25px;
+    left: 185px;
+}
 
-}
-.price3{
-    left: 60%;
-    
-}
-.price4{
-    left:83%;
-} */
-/* @media (max-width: 1347px){
-    .s1 h1{
-        width: 100%;
-    }
-} */
 @media (min-width: 1076px) and (max-width: 1237px){
+    .main1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .section2{
+        width: 95%;
         justify-content: center;
         gap:30px;
+        margin-left: 0;
     }
     .topgames{
-        margin-top: 200px;
+        margin-top: 250px;
     }
 }
 @media (max-width: 1139px){
@@ -594,12 +614,20 @@ a{
         top:300px;
     }
 }
-@media (max-width: 1137px){
+@media (max-width: 1140px){
+    .topgames{
+        /* margin-top: 500px; */
+        height: 1000px;
+        margin-top: 500px;
+    }
     .s2{
         gap:30px;
     }
     .footer{
-        top:500px;
+        top:400px;
+    }
+    .categories{
+        top:100px
     }
 }
 @media (min-width: 904px) and (max-width: 1075px){
@@ -611,10 +639,12 @@ a{
     }
     .main1{
         top: 400px;
+        
     }
     .section2{
         justify-content: center;
         gap:30px;
+        left: 0;
     }
     .topgames{
         margin-top: 500px;
@@ -623,13 +653,13 @@ a{
         gap:50px;
     }
     .categories{
-        top: 300px;
+        top: 100px;
     }
     .s2{
         gap:30px;
     }
     .footer{
-        top: 500px;
+        top: 400px;
     }
 }
 @media (max-width: 1004px){
@@ -638,6 +668,19 @@ a{
     }
     .header-right{
         width: 70%;
+    }
+}
+@media (max-width: 1004px){
+    .text{
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .image1{
+        background-size: 250px 350px;
+        width: 250px;
+        height: 350px;
     }
 }
 @media (min-width: 801px) and (max-width: 903px){
@@ -666,13 +709,13 @@ a{
         gap:50px;
     }
     .categories{
-        top: 300px;
+        top: 100px;
     }
     .s2{
         gap: 30px;
     }
     .footer{
-        top: 500px;
+        top: 400px;
     }
     
 }  
@@ -729,53 +772,53 @@ a{
         gap: 50px;
     }
     .categories{
-        top:300px;
+        top:100px;
     }
     .s2{
          
         gap:30px;
     }
     .footer{
-        top:500px;   
+        top:400px;   
+    }
+}
+@media (max-width: 799px){
+    .topgames{
+        margin-top: 500px;
+    }
+    .search{
+        width:400px;
     }
 }
 @media (max-width: 784px){
-    
+    .search{
+        width:300px;
+    }
     .header-right .btn{
         margin-right: 5px;
     }
-}@media (max-width: 768px){
-    /* .header-top{
-        /* height: 10%; 
-    }
-    .header-left{
-        width: 100%;
-        left: 0;
-        display: flex;
-        justify-content: center;
-    }
-    .header-right{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }  */
 }
-@media (max-width: 746px){
-    /* .header{
-        justify-content: center;
-    } */
-   
+/* 
+@media (max-width: 768px){
     
 }
+@media (max-width: 746px){
+    
+    
+   
+    
+} */
 
 @media (max-width: 740px){
     .footer{
-        top:800px;   
+        top:700px;   
     } 
 }
 @media (max-width: 719px){
+    
     .header-middle{
         width: 100vw;
+        top: 120px;
     }
     .text{
         width: 40%;
@@ -783,9 +826,24 @@ a{
     .image{
         width: 50%;
     }
+    .topgames{
+        margin-top: 500px;
+        height: 1000px;
+    }
+    .categories{
+        top: 100px;
+    }
+    .footer{
+        top:600px;   
+    } 
 }
 @media (max-width: 699px){
-   
+    /* .header-end{
+        margin-top: 100px;
+    }
+    .main1{
+        margin-top: 100px;
+    } */
     .topgames{
         margin-top: 1100px;
    }
@@ -794,7 +852,7 @@ a{
     justify-content: center;
    }
     .footer{
-        top:800px;   
+        top:700px;   
     } 
 }
 @media (max-width: 669px){
@@ -811,30 +869,30 @@ a{
         left: 0;
         align-items: center;
     }
+    .search{
+        width:450px;
+    }
     .image{
         display: flex;
         justify-content: center;
         
     }
-    /* .image1{
-        background-size: 250px 350px;
-        height: 350px;
-        width: 250px;  
-    } */
+    
     .header-end{
-        top: 500px;
+        top: 620px;
     }
     .main1{
-        top: 700px;
+        margin-top: 400px;
     }
     .topgames{
-        margin-top: 1400px;
+        margin-top: 1100px;
+        height: 1350px;
     }
     .categories{
-        top: 700px;
+        top: 100px;
     }
     .footer{
-        top:1200px;   
+        top:600px;   
     } 
 }
 @media (max-width:599px) {
@@ -850,10 +908,17 @@ a{
         /* justify-content: right;*/ 
     }
     .main1{
-        top: 1200px;
+        top: 900px;
     }
     .topgames{
-        margin-top: 1900px;
+        margin-top: 1650px;
+        height: 1350px;
+    }
+    .categories{
+        top:100px;
+    }
+    .footer{
+        top: 600px;
     }
 }
 @media screen and (max-width:500px) {
@@ -906,11 +971,13 @@ a{
     .image{
         width: 100vw;
         justify-content: center;
+        margin-top: 80px;
     }
     .image1{
         background-size: 300px 400px;
         width: 300px;
         height: 400px;
+        
     }
     .header-end{
         width: 100vw;
@@ -926,7 +993,7 @@ a{
     .main1{
         /* margin-top: 1200px; */
         position: relative;
-        top: 1200px;
+        top: 800px;
         /* height: 2500px; */
     }
     .t1{
@@ -953,7 +1020,8 @@ a{
     }
     .topgames{
         width: 100vw;
-        margin-top: 2000px;
+        margin-top: 1650px;
+        height: 1350px;
         
     }
     .sec1{
@@ -973,7 +1041,7 @@ a{
     }
     .categories{
         width: 100vw;
-        top: 1100px;
+        top: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -991,17 +1059,33 @@ a{
     }
     .footer{
         width: 100vw;
-        top: 1700px;
+        top: 1200px;
         height: 10%;
     }
 }
+@media (max-width: 470px){
+    .header-end{
+        top:550px;
+    }
+    .main1{
+        top: 850px;
+    }
+}
+@media (max-width: 460px){
+    .header-end{
+        top: 600px;
+    }
+}
 @media (max-width: 429px){
+    .topgames{
+        height: 2400px;
+    }
     .categories{
-        top:2000px;
+        top:400px;
         height: 900px;
     }
     .footer{
-        top: 2350px;
+        top: 800px;
     }
 }
 
